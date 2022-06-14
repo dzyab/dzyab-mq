@@ -332,6 +332,8 @@ aside{
 }
 
 .search:focus{
+    outline: none;
+    border:1px solid rgb(197, 170, 111);
     outline-color: rgb(197, 170, 111);
     outline-offset: 0px;
 }
@@ -401,17 +403,21 @@ aside{
 }
 
 .mail{
-    border:0px;
+    border:1px;
     background-color:  rgb(234, 239, 243);
+    border-color: rgb(234, 239, 243);
     height: 40px;
-    padding: 0 20px;
+    padding: 1px 20px;
     display: flex;
     
 }
 
 .mail:focus{
+    outline: none;
+    border:1px solid rgb(197, 170, 111);
     outline-color: rgb(197, 170, 111);
     outline-offset: 0px;
+    padding: 0 20px;
 }
 
 .button{
@@ -544,10 +550,6 @@ footer{
 
 .itemdesc{
     display: flex;
-}
-
-.itemText{
-        
 }
 
 .itemText a{
