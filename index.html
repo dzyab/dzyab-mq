@@ -28,9 +28,9 @@
         </div>
     </div>
     </header>
-        <div class="sectionTitle">
-            СЕЙЧАС В ТРЕНДЕ
-        </div>
+        <h2 class="sectionTitle">
+            Сейчас в тренде
+        </h2>
         <ul class="bannerBand">
             <li class="banner" >
                 
@@ -87,7 +87,7 @@
                             <li><a class="cardlist" href="#">health</a></li>
                         </ul>
                     </div>
-                    <div class="trendtext"><a class="trendlink" href="#">СЕЙЧАС В ТРЕНДЕ: сколько витаминов в лимонах?</a></div>
+                    <div class="trendtext"><a class="trendlink" href="#">Сейчас в тренде: сколько витаминов в лимонах?</a></div>
                 </div>
                 </div>
                 </div>
@@ -97,12 +97,12 @@
         <main>
             <ul>
             <li class="blogpost">
-                <img class="img" src="https://netology-code.github.io/html-2-diploma/sources/images/last-post1.jpg">
+                <img class="img" src="images/last-post1.jpg">
                 <div class="blogpostText">
                     <div class="teg"> 
                         <ul>
-                          <li><a href="#">travel</a></li>
-                          <li><a href="#">health</a></li>
+                          <li><a class="teglink" href="#">travel</a></li>
+                          <li><a class="teglink" href="#">health</a></li>
                         </ul>
                     </div>
                     <h3><a href="#" class="blogpostCaption">10 мест ради которых стоит проснуться на рассвете</a></h3>
@@ -115,12 +115,12 @@
                 </div>
             </li>
             <li class="blogpost">
-                <img class="img" src="https://netology-code.github.io/html-2-diploma/sources/images/last-post2.jpg">
+                <img class="img" src="images/last-post2.jpg">
                 <div class="blogpostText">
                     <div class="teg"> 
                         <ul>
-                          <li><a href="#">health</a></li>
-                          <li><a href="#">lifestyle</a></li>
+                          <li><a class="teglink" href="#">health</a></li>
+                          <li><a class="teglink" href="#">lifestyle</a></li>
                         </ul>
                     </div>
                   <h3><a href="#" class="blogpostCaption">Йога для начинающих в домашних условиях</a></h3>
@@ -133,11 +133,11 @@
                     из того, что можно найти в шкафу. </p>                </div>
             </li>
             <li class="blogpost">
-                <img class="img" src="https://netology-code.github.io/html-2-diploma/sources/images/last-post3.jpg">
+                <img class="img" src="images/last-post3.jpg">
                 <div class="blogpostText">
                     <div class="teg"> 
                         <ul>
-                          <li><a href="#">music</a></li>
+                          <li><a class="teglink" href="#">music</a></li>
                         </ul>
                     </div>
                   <h3><a href="#" class="blogpostCaption">Лучшие музыкальные фестивали этого лета</a></h3>
@@ -151,12 +151,12 @@
                 </div>
             </li>
             <li class="blogpost">
-                <img class="img" src="https://netology-code.github.io/html-2-diploma/sources/images/last-post4.jpg">
+                <img class="img" src="images/last-post4.jpg">
                 <div class="blogpostText">
                     <div class="teg"> 
                         <ul>
-                          <li><a href="#">lifestyle</a></li>
-                          <li><a href="#">food</a></li>
+                          <li><a class="teglink" href="#">lifestyle</a></li>
+                          <li><a class="teglink" href="#">food</a></li>
                         </ul>
                     </div>
                     <h3><a href="#" class="blogpostCaption">Наукоёмкий подход к кулинарии</a></h3>
@@ -170,13 +170,13 @@
                 </div>
             </li>
             <li class="blogpost">
-                <img class="img" src="https://netology-code.github.io/html-2-diploma/sources/images/last-post5.jpg">
+                <img class="img" src="images/last-post5.jpg">
                 <div class="blogpostText">
                     <div class="teg"> 
                         <ul>
-                          <li><a href="#">lifestyle</a></li>
-                          <li><a href="#">interior</a></li>
-                          <li><a href="#">art</a></li>
+                          <li><a class="teglink" href="#">lifestyle</a></li>
+                          <li><a class="teglink" href="#">interior</a></li>
+                          <li><a class="teglink" href="#">art</a></li>
                         </ul>
                     </div>
                     <h3><a href="#" class="blogpostCaption">Делаем модные принты на подушках для интерьера</a></h3>
@@ -191,12 +191,12 @@
                 </div>
             </li>    
             <li class="blogpost">
-                <img class="img" src="https://netology-code.github.io/html-2-diploma/sources/images/last-post6.jpg">
+                <img class="img" src="images/last-post6.jpg">
                 <div class="blogpostText">
                     <div class="teg"> 
                         <ul>
-                          <li><a href="#">travel</a></li>
-                          <li><a href="#">lifestyle</a></li>
+                          <li><a class="teglink" href="#">travel</a></li>
+                          <li><a class="teglink" href="#">lifestyle</a></li>
                         </ul>
                     </div>
                   <h3><a href="#" class="blogpostCaption">Как первый раз отправиться в горы?</a></h3>
@@ -213,9 +213,9 @@
             </ul>
         </main>
         <aside>
-            <div class="sectionTitle">
-                НОВЫЕ ПОСТЫ
-            </div>
+            <h2 class="sectionTitle">
+                Новые посты
+            </h2>
             <section>
                 <ul class = "newPostList">
                 <li class="newPost">
@@ -257,20 +257,20 @@
             </section>
             <form class="form">
                 <div class="search-all">
-                <input class="search" type="search" placeholder="Найти..." required>
-                    <img class="buttonsearch" src="svg/search.svg">
+                <label for="search">search</label>
+                <input id="search" class="search" type="search" placeholder="Найти..." required>
+                <button type="button" class="buttonBox"><img class="buttonsearch" src="svg/search.svg"></button>
                 </div>
-            <div class="sectionTitle">
-                РАССЫЛКА
-                <!div class="line2"><!/div>
-            </div>
-            <input class="mail" type="email" placeholder="Ваш email-адрес" required>
-                <button class="button">Подписаться</button>
+               <h2 class="sectionTitle">
+                Рассылка
+                </h2>
+                <label for="email">email</label>
+                <input id = "email" class="mail" type="email" placeholder="Ваш email-адрес" required>
+                    <button type="submit" class="button">Подписаться</button>
             </form>
-            <div class="sectionTitle">
-                ТЕГИ
-                <!div class="line2"><!/div>
-            </div>
+            <h2 class="sectionTitle">
+                Теги
+            </h2>
             <ul class="mini-tegBox">
                 <li class="mini-teg"><a class="mini-tegText" href="#">Fashion</a></li>
                 <li class="mini-teg"><a class="mini-tegText" href="#">Music</a></li>
@@ -281,9 +281,9 @@
                 <li class="mini-teg"><a class="mini-tegText" href="#">Food</a></li>
                 <li class="mini-teg"><a class="mini-tegText" href="#">Health</a></li>
             </ul>
-            <div class="sectionTitle">
-                ТЕМЫ
-            </div>
+            <h2 class="sectionTitle">
+                Темы
+            </h2>
             <ul class="themesBox">
                 <li class="mini-theme"><a class="mini-theme" href="#">Красота</a><sup>12</sup>
                     <div class="mini-themeLine"</div></li>
@@ -300,31 +300,61 @@
             </ul>
         </aside>
     </div>
-    <div class="sectionTitle">
+    <h2 class="sectionTitle">
         НАШИ ИЗДЕЛИЯ
-     </div> 
+    </h2> 
             <div class="itembox">  
             <div  class="itemCard" >
                <img class="itemImage" src='images/shop-item-desk1.jpg'>
                <div class="itemDescriptoin">
-               <h4 class="itemCaption">Подушка на диван</h4>
-               <div>Набор из двух подушек с модными принтами. Видео о создании <a href="#">здесь</a></div>
+                    <h3 class="itemCaption">Подушка на диван</h3>
+                    <div class="itemText">Набор из двух подушек с модными принтами. Видео о создании <a href="#">здесь</a></div>
+               </div>
+               <div class="buyBox">
+                   <div class="priceBox">
+                        <div class="oldPrice">
+                           1000 &#8381;
+                        </div>
+                        <div class="NewPrice">
+                           800 &#8381;
+                        </div>
+                </div>
+                <button type="submit" class="button">В магазин</button>
                </div>
             </div>
             <div  class="itemCard" >
                 <img class="itemImage" src="images/shop-item-desk2.jpg">
                 <div class="itemDescriptoin">
-                    <h4 class="itemCaption">Кукла "Зайчик"</h4>
-                    <div>Интерьерная рукодельная кукла "Зайчик", созданию которой посвящена <a href="#">весенняя серия постов в блоге</a> и несколько подкастов.</div>
+                    <h3 class="itemCaption">Кукла "Зайчик"</h3>
+                    <div class="itemText">Интерьерная рукодельная кукла "Зайчик", созданию которой посвящена <a href="#">весенняя серия постов в блоге</a> и несколько подкастов.</div>
                 </div>
-             </div>
+                <div class="buyBox">
+                    <div class="priceBox">
+                         <div class="NewPrice">
+                            3500 &#8381;
+                         </div>
+                 </div>
+                 <button type="submit" class="button">В магазин</button>
+                </div>
+              </div>
              <div  class="itemCard" >
                 <img class="itemImage" src="images/shop-item-desk3.jpg">
                 <div class="itemDescriptoin">
-                    <h4 class="itemCaption">Шестиугольная рамка</h4>
-                    <div>Необычная рамка для украшения дома из видео <a href="#">"Как сделать рамку из подручных средств за 30 минут."</a></div>
+                    <h3 class="itemCaption">Шестиугольная рамка</h3>
+                    <div class="itemText">Необычная рамка для украшения дома из видео <a href="#">"Как сделать рамку из подручных средств за 30 минут."</a></div>
                     </div>
-             </div>  
+                    <div class="buyBox">
+                        <div class="priceBox">
+                             <div class="oldPrice">
+                                500 &#8381;
+                             </div>
+                             <div class="NewPrice">
+                                400 &#8381;
+                             </div>
+                     </div>
+                     <button type="submit" class="button">В магазин</button>
+                    </div>
+                  </div>  
         </div>
         <footer>
 
