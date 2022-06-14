@@ -86,7 +86,10 @@ body{
 .cardlist{
     text-decoration: none;
     color: rgb(197, 170, 111);
+}
 
+.cardlist:hover{
+    text-decoration: underline;
 }
 
 .bannerText{
@@ -307,6 +310,7 @@ aside{
     text-align: center;
     margin-bottom: 20px;
     margin-top: 20px;
+    text-transform: uppercase;
 }
 
 .sectionTitle::after{
@@ -317,6 +321,7 @@ aside{
   margin-top: 10px;
 
 }
+
 .search{
     width: 100%;
       background-color:  rgb(234, 239, 243);
@@ -325,6 +330,12 @@ aside{
       padding: 0 20px;
       margin-top: 20px;
 }
+
+.search:focus{
+    outline-color: rgb(197, 170, 111);
+    outline-offset: 0px;
+}
+
 .newPostText{
     font-weight: 600;
     font-size: 13px;
@@ -337,6 +348,11 @@ aside{
 .blogpost a.h3 {
     font-weight: 600;
 }
+
+.blogpost a.h3:hover {
+    color: rgb(180, 135, 75);
+}
+
 .author{
     font-weight: 600;
     font-size: 13px;
@@ -357,8 +373,12 @@ aside{
     display: inline-block;
     margin-left: -35px;
     margin-right: 50px;
-
 }
+
+.teglink:hover{
+    text-decoration: underline;
+}
+
 .line{
     width:70px;
     height: 3px;
@@ -386,11 +406,16 @@ aside{
     height: 40px;
     padding: 0 20px;
     display: flex;
+    
+}
+
+.mail:focus{
+    outline-color: rgb(197, 170, 111);
+    outline-offset: 0px;
 }
 
 .button{
     border:0;
-    width: 100%;
     height: 40px;
     padding: 0 20px;
     margin-top: 20px;
@@ -414,11 +439,18 @@ aside{
 }
 
 .button:hover{
-    background-color: rgb(141, 122, 83);
+    background-color: black;
 }
 
 .buttonsearch:hover{
-    background-color: rgb(141, 122, 83);
+    background-color: black;
+}
+
+.buttonBox{
+    border: 0;
+    padding: 0;
+    margin: 0;
+    background-color:white;
 }
 
 .mini-tegBox{
@@ -450,6 +482,10 @@ aside{
 
 }
 
+.menuitem:hover{
+    text-decoration:underline;
+}
+
 .themesBox{
     display: flex;
     flex-direction: column;
@@ -459,10 +495,16 @@ aside{
 .mini-tegText{
     font-weight: 600;
     font-size: 13px;
-    margin: 10px 0;
     text-decoration: none;
     color: black;
     list-style-type:none;
+    
+}
+
+.mini-tegText:hover{
+    text-shadow: 1px 0px 0px black;
+    font-size: 13px;
+    font-weight: 900;
 }
 
 .mini-theme{
@@ -504,8 +546,35 @@ footer{
     display: flex;
 }
 
+.itemText{
+        
+}
+
+.itemText a{
+    text-decoration: none;
+    color:rgb(197, 170, 111);
+}
+
+.itemText a:hover{
+    text-decoration: underline;
+}
+
+.itemText:hover{
+    font-family: OpenSansBold;
+}
+
+
+
 .blogpostCaption{
     text-transform: uppercase;
+}
+
+a.blogpostCaption{
+    color: black;
+}
+
+a.blogpostCaption:hover{
+    color:rgb(197, 170, 111);
 }
 
 .itemCaption{
@@ -517,5 +586,31 @@ footer{
     padding: 0pt;
 }
 
+label{
+    display: none;
+}
 
+.buyBox{
+    display: flex;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 10px;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.priceBox{
+    display: flex;
+    flex-direction: column;
+}
+
+.oldPrice{
+    font-size: 0.7em;
+    text-decoration: line-through;
+    display: flex;
+}
+
+.newPrice{
+    display: flex;
+}
 
